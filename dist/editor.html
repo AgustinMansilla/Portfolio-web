@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11162b">
+  <title>Editar mi portfolio — Agustín Mansilla</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./css/editor.css">
+  <script src="./js/content.js?v=public-1" defer></script>
+  <script src="./js/content-shared.js?v=24" defer></script>
+  <script src="./js/editor.js" defer></script>
+</head>
+<body>
+  <header><a href="./index.html">✦ Agustín Mansilla <span>/ Editor de contenido</span></a><a href="./index.html" target="_blank" rel="noopener">Ver portfolio ↗</a></header>
+  <main>
+    <aside><h1>Editar<br><span>portfolio.</span></h1><p>Cambiá los textos y cargá las capturas reales de tus proyectos, sin tocar código.</p><nav aria-label="Secciones del editor"><a href="#presentacion">01 · Presentación</a><a href="#sobre-mi">02 · Sobre mí</a><a href="#proyectos">03 · Proyectos y capturas</a></nav><div class="howto"><strong>¿Cómo publico los cambios?</strong><p>1. Editá y guardá la vista previa.<br>2. Descargá <b>content.js</b>.<br>3. Reemplazá <b>dist/js/content.js</b> en tu proyecto y subilo a GitHub.</p><small>Guardar acá cambia solo este navegador. El editor no tiene acceso de escritura a tu GitHub ni publica en el servidor.</small></div></aside>
+    <form id="editor-form">
+      <section id="presentacion"><p class="eyebrow">01 / PRESENTACIÓN</p><h2>Presentación</h2><p class="section-description">Desde el saludo hasta tus datos de contacto.</p><div id="profile-fields" class="fields"></div><div class="text-preview"><small>VISTA PREVIA DEL SALUDO</small><p><span id="greeting-preview"></span><br><strong id="name-preview"></strong></p></div></section>
+      <section id="sobre-mi"><p class="eyebrow">02 / SOBRE MÍ</p><h2>Sobre mí</h2><div id="about-fields" class="fields"></div></section>
+      <section id="proyectos"><p class="eyebrow">03 / TUS PROYECTOS</p><h2>Proyectos</h2><p class="section-description">Subí una captura de pantalla real de cada proyecto. Se verá completa, sin deformaciones.</p><div id="project-fields"></div></section>
+      <section class="backups"><h2>Copias y recuperación</h2><p>Conservá un respaldo editable de tus textos y capturas.</p><div class="backup-actions"><button type="button" id="backup-button" class="secondary">Descargar respaldo JSON</button><label class="file-button">Importar respaldo JSON<input type="file" id="import-backup" accept="application/json,.json"></label><button type="button" id="reset-button" class="text-button">Cargar contenido publicado</button></div><small>“Cargar contenido publicado” descarta lo que estás editando y carga los datos del archivo content.js. Pulsá Guardar si también querés aplicar ese cambio al navegador.</small></section>
+      <div class="savebar"><div><span class="save-dot"></span><p id="editor-status" role="status">Listo para editar. Los cambios todavía no se guardaron.</p></div><button type="submit" class="primary">Guardar vista previa</button><button type="button" id="export-button" class="secondary">Descargar para publicar ↗</button></div>
+    </form>
+  </main>
+</body>
+</html>
