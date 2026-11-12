@@ -690,6 +690,11 @@ pre {
   flex-shrink:0
 }
 
+.github-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+}
 .github-profile .mono {
   color:var(--cyan);
   font-size:12px
