@@ -2,7 +2,7 @@
 
 Portfolio profesional de Agustín Mansilla, técnico universitario en Programación por la UTN Resistencia. Reúne sitios web y aplicaciones de gestión desarrollados para negocios y comunidades.
 
-[Ver el portfolio publicado](https://agustin-mansilla-portfolio.elgasumansilla.chatgpt.site)
+[Ver el portfolio publicado](https://agustinmansilla.github.io/Portfolio-web/)
 
 ---
 
@@ -34,7 +34,7 @@ El código de cada proyecto se consulta en los repositorios enlazados arriba, cu
 
 ## 🚀 Cómo recorrerlo
 
-1. Abrí el [portfolio publicado](https://agustin-mansilla-portfolio.elgasumansilla.chatgpt.site).
+1. Abrí el [portfolio publicado](https://agustinmansilla.github.io/Portfolio-web/).
 2. Entrá a **Proyectos** para ver las fichas y capturas.
 3. Usá **Descargar CV** para consultar mi formación y experiencia. En **Contacto** podés preparar un correo desde tu aplicación de correo habitual.
 
