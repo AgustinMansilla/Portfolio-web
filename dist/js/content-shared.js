@@ -1,6 +1,7 @@
 /* Datos compartidos por el portfolio y el editor local. */
 'use strict';
 window.PortfolioContent = (() => {
+  const localPreview = ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
   const key = 'gasuos-content-v3';
   const clone = value => JSON.parse(JSON.stringify(value));
   const defaults = clone(window.PORTFOLIO_CONTENT);
@@ -51,6 +52,7 @@ window.PortfolioContent = (() => {
     return result;
   }
   function load() {
+    if (!localPreview) return clone(defaults);
     try {
       const saved = localStorage.getItem(key);
       if (!saved) return clone(defaults);
@@ -69,9 +71,11 @@ window.PortfolioContent = (() => {
   }
   function save(value) {
     const clean = normalize(value);
-    localStorage.setItem(key, JSON.stringify({ ...clean, publishedPhotos: true }));
+    if (localPreview) localStorage.setItem(key, JSON.stringify({ ...clean, publishedPhotos: true }));
     return clean;
   }
-  function reset() { localStorage.removeItem(key); }
+  function reset() {
+    if (localPreview) localStorage.removeItem(key);
+  }
   return { key, defaults, clone, normalize, load, save, reset, safeLink, projectKeys };
 })();
