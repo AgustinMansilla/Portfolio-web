@@ -21,9 +21,13 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@v5
+      - name: Preparar versión pública
+        run: |
+          cp -a dist public
+          rm public/editor.html public/css/editor.css public/js/editor.js
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: public
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4
