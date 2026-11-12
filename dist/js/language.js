@@ -68,6 +68,7 @@ CÓDIGO ABIERTO|OPEN SOURCE
 El código también cuenta.|Code behind the projects.
 Repositorios, proyectos y lo que voy desarrollando.|Repositories, projects and work in progress.
 Ver perfil en GitHub ↗|View GitHub profile ↗
+Ver código del portfolio ↗|View portfolio source ↗
 05 // CONTACTO|05 // CONTACT
 Contame qué necesitás.|Tell me what you need.
 Si tenés un proyecto en mente, dejame una idea de lo que querés hacer.|If you have a project in mind, tell me a little about it.
