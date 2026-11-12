@@ -40,8 +40,32 @@ El código de cada proyecto se consulta en los repositorios enlazados arriba, cu
 
 ---
 
+## 🛠️ Estructura y ejecución local
+
+```text
+Portfolio-web/
+├── dist/
+│   ├── index.html    # Página principal
+│   ├── editor.html   # Editor de contenido con vista previa local
+│   ├── css/          # Estilos del sitio y del editor
+│   ├── js/           # Contenido, traducciones e interacciones
+│   └── assets/       # Capturas, iconos y CV en español e inglés
+└── .github/workflows/pages.yml
+```
+
+Abrí la carpeta del proyecto en VS Code. Desde la terminal integrada, ejecutá lo siguiente con Python 3:
+
+```bash
+python3 -m http.server 5500 --directory dist
+```
+
+Abrí [el portfolio local](http://localhost:5500/). El [editor local](http://localhost:5500/editor.html) guarda la vista previa en el navegador. Para incorporar sus cambios al código, exportá el contenido y reemplazá `dist/js/content.js`.
+
+---
+
 ## ✉️ Contacto
 
 - [GitHub](https://github.com/AgustinMansilla)
 - [LinkedIn](https://www.linkedin.com/in/agustin-mansilla-a2285b239/)
 - [agustinmansillajob@gmail.com](mailto:agustinmansillajob@gmail.com)
+
