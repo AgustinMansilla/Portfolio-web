@@ -46,7 +46,8 @@ window.PortfolioContent = (() => {
         result.projects[id][name] = text(project[name], result.projects[id][name], name === 'description' ? 5000 : 350);
       });
       result.projects[id].tags = Array.isArray(project.tags) ? project.tags.filter(tag => typeof tag === 'string').slice(0, 12).map(tag => tag.slice(0, 80)) : result.projects[id].tags;
-      result.projects[id].url = safeLink(project.url);
+      result.projects[id].url = safeLink(project.url) || defaults.projects[id].url;
+      result.projects[id].repositoryUrl = safeLink(project.repositoryUrl) || defaults.projects[id].repositoryUrl;
       result.projects[id].image = safeImage(project.image);
     });
     return result;
