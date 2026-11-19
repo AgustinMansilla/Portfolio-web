@@ -38,7 +38,8 @@ window.PORTFOLIO_CONTENT = {
       ],
       "subtitle": "Portal de noticias",
       "image": "./assets/projects/chaskibrenas.webp",
-      "imageAlt": "Portada de Chaski Breñas con noticias, radio y servicios locales"
+      "imageAlt": "Portada de Chaski Breñas con noticias, radio y servicios locales",
+      "repositoryUrl": "https://github.com/AgustinMansilla/ChaskiBrenas-Web"
     },
     "agencia": {
       "url": "https://github.com/AgustinMansilla/Agencia-San-Gabriel-Demo",
@@ -53,7 +54,8 @@ window.PORTFOLIO_CONTENT = {
       ],
       "subtitle": "Aplicación de escritorio",
       "image": "./assets/projects/agencia-san-gabriel.webp",
-      "imageAlt": "Inicio de Agencia San Gabriel con cuatro accesos de gestión"
+      "imageAlt": "Inicio de Agencia San Gabriel con cuatro accesos de gestión",
+      "repositoryUrl": "https://github.com/AgustinMansilla/Agencia-San-Gabriel-Demo"
     },
     "vida": {
       "url": "https://github.com/AgustinMansilla/Maxikiosco-Vida",
@@ -68,7 +70,8 @@ window.PORTFOLIO_CONTENT = {
       ],
       "subtitle": "Punto de venta",
       "image": "./assets/maxikiosco-vida-ventas.webp",
-      "imageAlt": "Captura de Maxikiosco Vi-Da"
+      "imageAlt": "Captura de Maxikiosco Vi-Da",
+      "repositoryUrl": "https://github.com/AgustinMansilla/Maxikiosco-Vida"
     },
     "control": {
       "url": "https://github.com/AgustinMansilla/Control-Kiosco-Demo",
@@ -83,7 +86,8 @@ window.PORTFOLIO_CONTENT = {
       ],
       "subtitle": "Gestión de turnos",
       "image": "",
-      "imageAlt": "Vista móvil de Control Kiosco con estado de turnos y totales del día"
+      "imageAlt": "Vista móvil de Control Kiosco con estado de turnos y totales del día",
+      "repositoryUrl": "https://github.com/AgustinMansilla/Control-Kiosco-Demo"
     }
   }
 };
