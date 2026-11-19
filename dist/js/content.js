@@ -85,8 +85,8 @@ window.PORTFOLIO_CONTENT = {
         "Offline"
       ],
       "subtitle": "Gestión de turnos",
-      "image": "",
-      "imageAlt": "Vista móvil de Control Kiosco con estado de turnos y totales del día",
+      "image": "./assets/projects/control-kiosco.webp",
+      "imageAlt": "Pantalla de Control Kiosco con turnos y registro de entrada del personal",
       "repositoryUrl": "https://github.com/AgustinMansilla/Control-Kiosco-Demo"
     }
   }
