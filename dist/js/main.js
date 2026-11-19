@@ -171,12 +171,19 @@ function openProject(project) {
   const tags = make('div','tags');
   tags.append(...project.tags.map(tag => make('span','',t(tag))));
   body.append(tags);
-  if (project.url) {
+  if (project.url && project.url !== project.repositoryUrl) {
     const link = make('a','button',t('Abrir enlace del proyecto ↗'));
     link.href = project.url;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     body.append(link);
+  }
+  if (project.repositoryUrl) {
+    const repository = make('a', 'button', t('Ver repositorio en GitHub ↗'));
+    repository.href = project.repositoryUrl;
+    repository.target = '_blank';
+    repository.rel = 'noopener noreferrer';
+    body.append(repository);
   }
   $('#project-dialog-content').replaceChildren(...(project.image ? [makeZoomableProjectPhoto(project), body] : [body]));
   projectDialog.showModal();
