@@ -171,14 +171,15 @@ function openProject(project) {
   const tags = make('div','tags');
   tags.append(...project.tags.map(tag => make('span','',t(tag))));
   body.append(tags);
-  if (project.url && project.url !== project.repositoryUrl) {
+  const projectUrl = project.url || project.repositoryUrl;
+  if (projectUrl) {
     const link = make('a','button',t('Abrir enlace del proyecto ↗'));
-    link.href = project.url;
+    link.href = projectUrl;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     body.append(link);
   }
-  if (project.repositoryUrl) {
+  if (project.repositoryUrl && project.repositoryUrl !== projectUrl) {
     const repository = make('a', 'button', t('Ver repositorio en GitHub ↗'));
     repository.href = project.repositoryUrl;
     repository.target = '_blank';
