@@ -1,7 +1,7 @@
 'use strict';
 const english = new Map(`Agustín Mansilla · Desarrollador|Agustín Mansilla · Software Developer
 Ir al contenido|Skip to content
-Descargar CV|Download résumé
+Descargar CV|Download resume
 Inicio|Home
 Sobre mí|About me
 Proyectos|Projects
@@ -22,7 +22,7 @@ Soy técnico universitario en Programación|I hold a university diploma in progr
 Desarrollo aplicaciones para negocios y sitios web.|I build business applications and websites.
 Accesos rápidos|Quick links
 Accesos rápidos del perfil|Profile quick links
-Abrir CV|Open résumé
+Abrir CV|Open resume
 Tecnologías|Technologies
 Frameworks y CMS|Frameworks and CMS
 Tecnologías.|Technologies.
@@ -68,6 +68,7 @@ CÓDIGO ABIERTO|OPEN SOURCE
 El código también cuenta.|Code behind the projects.
 Repositorios, proyectos y lo que voy desarrollando.|Repositories, projects and work in progress.
 Ver perfil en GitHub ↗|View GitHub profile ↗
+Ver repositorio en GitHub ↗|View repository on GitHub ↗
 Ver código del portfolio ↗|View portfolio source ↗
 05 // CONTACTO|05 // CONTACT
 Contame qué necesitás.|Tell me what you need.
