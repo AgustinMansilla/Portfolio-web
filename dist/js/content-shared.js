@@ -61,7 +61,7 @@ window.PortfolioContent = (() => {
       const result = normalize(source);
       // Restore newly published project photos in older saved previews.
       for (const id of projectKeys) {
-        if (source?.publishedPhotos && id !== 'vida') continue;
+        if (source?.publishedPhotos && id !== 'vida' && id !== 'control') continue;
         if (result.projects[id].image || !defaults.projects[id].image) continue;
         result.projects[id].image = defaults.projects[id].image;
         result.projects[id].imageAlt = defaults.projects[id].imageAlt;
